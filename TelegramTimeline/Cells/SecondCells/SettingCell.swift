@@ -11,14 +11,18 @@ struct SettingCell: View {
     var body: some View {
         VStack{
             Image("img1").resizable()
-                .frame(width: 100,height: 100)
+                .frame(width: 90,height: 90)
                 .cornerRadius(50)
-            Text("A'zamjon Abdumuxtorov").font(.title)
-            Text("+998 93 998 99 80  @Azamjon_Abdumu...").foregroundColor(.secondary)
+            Text("A'zamjon Abdumuxtorov")
+                .font(.title)
+                .foregroundColor(.white)
+            Text("+998 93 998 99 80  @Azamjon_Abdumu...")
+                .foregroundColor(.white.opacity(0.65))
         }
     }
 }
 
 #Preview {
     SettingCell()
+       
 }

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8281F86E2B3BE12200DFAFE2 /* KontaktView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F86D2B3BE12200DFAFE2 /* KontaktView.swift */; };
+		8276223C2CA91E5D00500B40 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276223B2CA91E5D00500B40 /* HomeView.swift */; };
+		8276223E2CA94FC900500B40 /* ChatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276223D2CA94FC900500B40 /* ChatDetailView.swift */; };
+		8281F86E2B3BE12200DFAFE2 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F86D2B3BE12200DFAFE2 /* ContactView.swift */; };
 		8281F8702B3BE13000DFAFE2 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F86F2B3BE13000DFAFE2 /* SettingView.swift */; };
-		8281F8732B3BE6B400DFAFE2 /* KontaktCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F8722B3BE6B400DFAFE2 /* KontaktCell.swift */; };
+		8281F8732B3BE6B400DFAFE2 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F8722B3BE6B400DFAFE2 /* ContactCell.swift */; };
 		8281F8752B3BEE0D00DFAFE2 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F8742B3BEE0D00DFAFE2 /* SettingCell.swift */; };
 		8281F8772B3BF12F00DFAFE2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F8762B3BF12F00DFAFE2 /* ItemCell.swift */; };
 		82D5B6F12B3B0BA40013A696 /* TelegramTimelineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B6F02B3B0BA40013A696 /* TelegramTimelineApp.swift */; };
@@ -18,14 +20,16 @@
 		82D5B6F82B3B0BA50013A696 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D5B6F72B3B0BA50013A696 /* Preview Assets.xcassets */; };
 		82D5B7002B3B116B0013A696 /* StoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B6FF2B3B116B0013A696 /* StoryItem.swift */; };
 		82D5B7022B3B118D0013A696 /* AddStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B7012B3B118D0013A696 /* AddStory.swift */; };
-		82D5B7042B3B14C50013A696 /* Royhat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B7032B3B14C50013A696 /* Royhat.swift */; };
+		82D5B7042B3B14C50013A696 /* SegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B7032B3B14C50013A696 /* SegmentControl.swift */; };
 		82D5B7062B3B1A300013A696 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B7052B3B1A300013A696 /* Items.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8281F86D2B3BE12200DFAFE2 /* KontaktView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontaktView.swift; sourceTree = "<group>"; };
+		8276223B2CA91E5D00500B40 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8276223D2CA94FC900500B40 /* ChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
+		8281F86D2B3BE12200DFAFE2 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		8281F86F2B3BE13000DFAFE2 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		8281F8722B3BE6B400DFAFE2 /* KontaktCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontaktCell.swift; sourceTree = "<group>"; };
+		8281F8722B3BE6B400DFAFE2 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		8281F8742B3BEE0D00DFAFE2 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		8281F8762B3BF12F00DFAFE2 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		82D5B6ED2B3B0BA40013A696 /* TelegramTimeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegramTimeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,7 +39,7 @@
 		82D5B6F72B3B0BA50013A696 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		82D5B6FF2B3B116B0013A696 /* StoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryItem.swift; sourceTree = "<group>"; };
 		82D5B7012B3B118D0013A696 /* AddStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStory.swift; sourceTree = "<group>"; };
-		82D5B7032B3B14C50013A696 /* Royhat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Royhat.swift; sourceTree = "<group>"; };
+		82D5B7032B3B14C50013A696 /* SegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControl.swift; sourceTree = "<group>"; };
 		82D5B7052B3B1A300013A696 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,8 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				82D5B6F22B3B0BA40013A696 /* ContentView.swift */,
-				8281F86D2B3BE12200DFAFE2 /* KontaktView.swift */,
+				8281F86D2B3BE12200DFAFE2 /* ContactView.swift */,
 				8281F86F2B3BE13000DFAFE2 /* SettingView.swift */,
+				8276223B2CA91E5D00500B40 /* HomeView.swift */,
+				8276223D2CA94FC900500B40 /* ChatDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -72,7 +78,7 @@
 		8281F8712B3BE69700DFAFE2 /* SecondCells */ = {
 			isa = PBXGroup;
 			children = (
-				8281F8722B3BE6B400DFAFE2 /* KontaktCell.swift */,
+				8281F8722B3BE6B400DFAFE2 /* ContactCell.swift */,
 				8281F8742B3BEE0D00DFAFE2 /* SettingCell.swift */,
 				8281F8762B3BF12F00DFAFE2 /* ItemCell.swift */,
 			);
@@ -120,7 +126,7 @@
 				8281F8712B3BE69700DFAFE2 /* SecondCells */,
 				82D5B7012B3B118D0013A696 /* AddStory.swift */,
 				82D5B6FF2B3B116B0013A696 /* StoryItem.swift */,
-				82D5B7032B3B14C50013A696 /* Royhat.swift */,
+				82D5B7032B3B14C50013A696 /* SegmentControl.swift */,
 				82D5B7052B3B1A300013A696 /* Items.swift */,
 			);
 			path = Cells;
@@ -196,15 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82D5B7042B3B14C50013A696 /* Royhat.swift in Sources */,
-				8281F86E2B3BE12200DFAFE2 /* KontaktView.swift in Sources */,
-				8281F8732B3BE6B400DFAFE2 /* KontaktCell.swift in Sources */,
+				82D5B7042B3B14C50013A696 /* SegmentControl.swift in Sources */,
+				8281F86E2B3BE12200DFAFE2 /* ContactView.swift in Sources */,
+				8281F8732B3BE6B400DFAFE2 /* ContactCell.swift in Sources */,
 				8281F8772B3BF12F00DFAFE2 /* ItemCell.swift in Sources */,
 				82D5B7002B3B116B0013A696 /* StoryItem.swift in Sources */,
 				82D5B6F32B3B0BA40013A696 /* ContentView.swift in Sources */,
+				8276223E2CA94FC900500B40 /* ChatDetailView.swift in Sources */,
 				82D5B6F12B3B0BA40013A696 /* TelegramTimelineApp.swift in Sources */,
 				8281F8702B3BE13000DFAFE2 /* SettingView.swift in Sources */,
 				82D5B7062B3B1A300013A696 /* Items.swift in Sources */,
+				8276223C2CA91E5D00500B40 /* HomeView.swift in Sources */,
 				8281F8752B3BEE0D00DFAFE2 /* SettingCell.swift in Sources */,
 				82D5B7022B3B118D0013A696 /* AddStory.swift in Sources */,
 			);
@@ -340,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TelegramTimeline/Preview Content\"";
+				DEVELOPMENT_TEAM = D27FHR29X4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -368,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TelegramTimeline/Preview Content\"";
+				DEVELOPMENT_TEAM = D27FHR29X4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

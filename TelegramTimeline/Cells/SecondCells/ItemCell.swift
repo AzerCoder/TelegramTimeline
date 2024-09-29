@@ -9,149 +9,92 @@ import SwiftUI
 
 struct ItemCell: View {
     var body: some View {
-       
-            List{
-                SettingCell()
+        Form{
+            Section {
                 Button(action: {
                     
                 }, label: {
-                    HStack{
+                    HStack(spacing:12){
                         Image(systemName: "camera.badge.ellipsis")
+                            .imageScale(.medium)
                             .frame(width: 30,height: 30)
-                            .foregroundColor(.blue)
-                            .background(.white).cornerRadius(8)
-                        Text(" Profil rasmini o'zgartirish")
-                            .foregroundColor(.blue)
-                    }
+                            .cornerRadius(8)
+                        Text("Profil rasmini o'zgartirish")
+                        Spacer()
+                       
+                    }.foregroundColor(.blue)
                 })
-                HStack{
-                    Image(systemName: "circle.dashed")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.red).cornerRadius(8)
-                    Text(" Hikoyalarim")
-                    
-                }
-                HStack{
-                    Image(systemName: "bookmark.fill")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.blue).cornerRadius(8)
-                    Text(" Saqlangan habarlar")
-                    
-                }
-                HStack{
-                    Image(systemName: "phone.fill")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.green).cornerRadius(8)
-                    Text(" Oxirgi chaqiruvlar")
-                    
-                }
-                HStack{
-                    Image(systemName: "macbook.and.iphone")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.orange).cornerRadius(8)
-                    Text(" Qurilmalar")
-                    Spacer()
-                    Text("2").foregroundColor(.secondary)
-                    
-                }
-                HStack{
-                    Image(systemName: "folder.fill")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.blue.opacity(0.7)).cornerRadius(8)
-                    Text(" Chat jildlari")
-                    
-                }
-                HStack{
-                    Image(systemName: "bell.badge.fill")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.red).cornerRadius(8)
-                    Text(" Bildirishnomalar va ovozlar")
-                    
-                }
-                HStack{
-                    Image(systemName: "lock.fill")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.gray).cornerRadius(8)
-                    Text(" Maxfiylik va xavfsizlik")
-                    
-                }
-                HStack{
-                    Image(systemName: "tablecells.fill")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.green).cornerRadius(8)
-                    Text(" Ma'lumotlar va xotira")
-                    
-                }
-                HStack{
-                    Image(systemName: "circle.righthalf.filled.inverse")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.blue.opacity(0.8)).cornerRadius(8)
-                    Text(" Oxirgi chaqiruvlar")
-                    
-                }
-                HStack{
-                    Image(systemName: "battery.25")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.orange).cornerRadius(8)
-                    Text(" Quvvat tejash")
-                    Spacer()
-                    Text("O'chiq").foregroundColor(.secondary)
-                }
-                HStack{
-                    Image(systemName: "globe")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.purple).cornerRadius(8)
-                    Text(" Til")
-                    Spacer()
-                    Text("O'zbek").foregroundColor(.secondary)
-                }
-                HStack{
-                    Image(systemName: "star.fill")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.purple.opacity(0.8)).cornerRadius(8)
-                    Text(" Premium")
-                    
-                }
-                HStack{
-                    Image(systemName: "ellipsis.message.fill")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.orange).cornerRadius(8)
-                    Text(" Savol berish")
-                    
-                }
-                HStack{
-                    Image(systemName: "questionmark.circle.fill")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.blue.opacity(0.8)).cornerRadius(8)
-                    Text(" Telegram haqida savollar")
-                    
-                }
-                HStack{
-                    Image(systemName: "lightbulb.fill")
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.white)
-                        .background(.orange.opacity(0.7)).cornerRadius(8)
-                    Text(" Telegram funksiyalari")
-                    
-                }
+            }
             
-        }
+            Section {
+                SectionRow(imageName: "person.circle.fill", color: .red, title: "Profilim", view: EmptyView())
+            }
+            Section {
+                SectionRow(imageName: "wallet.bifold.fill", color: .blue, title: "Hamyon", view: EmptyView())
+            }
+            
+            Section{
+                SectionRow(imageName: "bookmark.fill", color: .blue, title: "Saqlangan xabarlar", view: EmptyView())
+                SectionRow(imageName: "phone.fill", color: .green, title: "Oxirgi chqiruvlar", view: EmptyView())
+                SectionRow(imageName:  "macbook.and.iphone", color: .orange, title: "Qurilmalar",subtitle: "3", view: EmptyView())
+                SectionRow(imageName: "folder.fill", color: .blue.opacity(0.7), title: "Chat jildlari",view: EmptyView())
+            }
+            Section{
+                SectionRow(imageName: "bell.badge.fill", color: .red, title: "Bildirishnomalar va ovozlar",view: EmptyView())
+                SectionRow(imageName: "lock.fill", color: .gray, title: "Maxfiylik va xavfsizlik",view: EmptyView())
+                SectionRow(imageName: "tablecells.fill", color: .green, title: "Ma'lumotlar va xotira",view: EmptyView())
+                SectionRow(imageName: "circle.righthalf.filled.inverse", color: .blue, title: "Oxirgi chaqiruvlar",view: EmptyView())
+                SectionRow(imageName: "battery.25", color: .orange, title: "Quvvat tejash", subtitle: "O'chiq",view: EmptyView())
+                SectionRow(imageName: "globe", color: .purple, title: "Til", subtitle: "O'zbek",view: EmptyView())
+            }
+            Section{
+                SectionRow(imageName: "star.fill", color: .purple.opacity(0.8), title: "Premium",view: EmptyView())
+                
+            }
+            
+            Section{
+                SectionRow(imageName:  "ellipsis.message.fill", color: .orange, title: "Savol berish",view: EmptyView())
+                
+                
+                SectionRow(imageName: "questionmark.circle.fill", color: .blue.opacity(0.8), title: "Telegram haqida savollar",view: EmptyView())
+                SectionRow(imageName: "lightbulb.fill", color: .orange.opacity(0.7), title: "Telegram funksiyalari",view: EmptyView())
+            }
+        }.listStyle(.sidebar)
+        .scrollIndicators(.hidden)
+            .listSectionSpacing(20)
+        
     }
 }
 #Preview {
+    NavigationView {
         ItemCell()
+    }
+}
+
+
+struct SectionRow<Destination: View>:View {
+    let imageName:String
+    let color:Color
+    let title:String
+    var subtitle:String = ""
+    var accent:Color = .white
+    var view:Destination
+    var body: some View {
+        NavigationLink {
+            view
+        } label: {
+            HStack(spacing:12){
+                Image(systemName: imageName)
+                    .imageScale(.medium)
+                    .frame(width: 30,height: 30)
+                    .foregroundColor(accent)
+                    .background(color)
+                    .cornerRadius(8)
+                Text(title)
+                Spacer()
+                Text(subtitle)
+                    .foregroundColor(.secondary)
+            }
+        }
+    }
 }
