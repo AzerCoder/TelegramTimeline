@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ItemCell: View {
     var body: some View {
-        Form{
+        List{
             Section {
                 Button(action: {
                     
@@ -21,7 +21,7 @@ struct ItemCell: View {
                             .cornerRadius(8)
                         Text("Profil rasmini o'zgartirish")
                         Spacer()
-                       
+                        
                     }.foregroundColor(.blue)
                 })
             }
@@ -59,9 +59,9 @@ struct ItemCell: View {
                 SectionRow(imageName: "questionmark.circle.fill", color: .blue.opacity(0.8), title: "Telegram haqida savollar",view: EmptyView())
                 SectionRow(imageName: "lightbulb.fill", color: .orange.opacity(0.7), title: "Telegram funksiyalari",view: EmptyView())
             }
-        }.listStyle(.sidebar)
+        }
         .scrollIndicators(.hidden)
-            .listSectionSpacing(20)
+        .listSectionSpacing(20)
         
     }
 }
@@ -91,6 +91,7 @@ struct SectionRow<Destination: View>:View {
                     .background(color)
                     .cornerRadius(8)
                 Text(title)
+                    .foregroundColor(.primary)
                 Spacer()
                 Text(subtitle)
                     .foregroundColor(.secondary)

@@ -11,6 +11,7 @@ struct ChatDetailView: View {
     let chat: Chat
     @State private var messageText: String = ""
     @Environment(\.dismiss) var dismiss
+    @State private var lineCount: Int = 1
     var body: some View {
         ZStack {
             Image(chat.profileImage)
@@ -25,7 +26,7 @@ struct ChatDetailView: View {
                         Spacer()
                     }
                 }
-                HStack {
+                HStack(alignment:.bottom)  {
                     Button {
                         
                     } label: {
@@ -34,8 +35,17 @@ struct ChatDetailView: View {
                             .foregroundColor(.secondary)
                     }
                     
-                    HStack {
-                        TextField("Xabar", text: $messageText)
+                    HStack{
+                        
+                        TextEditor(text: $messageText)
+                            .frame(maxHeight: 200)
+                            .frame(height: CGFloat(lineCount) * 24)
+                            
+                            .onChange(of: messageText) { newValue in
+                                // Qatorlar sonini hisoblash
+                                let textHeight = newValue.heightWithConstrainedWidth(width: UIScreen.main.bounds.width - 200, font: UIFont.systemFont(ofSize: 18))
+                                lineCount = max(1, Int(textHeight / 24)) 
+                            }
                         
                         if !messageText.isEmpty{
                             Image(systemName: "face.smiling")
@@ -47,8 +57,9 @@ struct ChatDetailView: View {
                                 .foregroundColor(.secondary)
                         }
                     }.padding(.horizontal, 10)
+                        .frame(maxHeight: 200)
+                        .frame(height: CGFloat(lineCount) * 24)
                         .frame(maxWidth: .infinity)
-                        .frame(height: 40)
                         .background(.white)
                         .cornerRadius(30)
                         .textFieldStyle(DefaultTextFieldStyle())
@@ -121,5 +132,16 @@ struct ChatDetailView: View {
 #Preview {
     NavigationView {
         ChatDetailView(chat: Chat( id: 1, name: "KING", lastMessage: "Messages", profileImage: "img1"))
+    }
+}
+
+
+extension String {
+    // Matnning balandligini hisoblash uchun yordamchi funksiya
+    func heightWithConstrainedWidth(width: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect, options: [.usesLineFragmentOrigin, .usesFontLeading], attributes: [NSAttributedString.Key.font: font], context: nil)
+
+        return ceil(boundingBox.height)
     }
 }

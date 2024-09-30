@@ -9,47 +9,93 @@ import SwiftUI
 
 struct SettingView: View {
     @Binding var selection:Int
-    @State var searchTeam = ""
+    @State private var scrollOffset: CGFloat = 0
+    @Namespace var namespace
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.green.opacity(0.5),.blue], startPoint: .topLeading, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            VStack{
-                SettingCell()
-                ItemCell()
-                
+            VStack {
+                LinearGradient(colors: [.green.opacity(0.5),.blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 400 + (scrollOffset > 0 ? scrollOffset : -200),alignment: .top)
+                    .edgesIgnoringSafeArea(.top)
+                Spacer()
             }
-            .navigationBarItems(
-                leading:  Button(action: {
-                    
-                }, label: {
-                    Image(systemName: "qrcode")
-                        .imageScale(.medium)
-                        .foregroundColor(.white)
-                        .padding(6)
-                        .background(.white.opacity(0.25))
-                        .mask(Circle())
-                })
-                ,
-                trailing: HStack{
-                    Button(action: {
-                        
-                    }, label: {
-                        Text("Tahrir")
-                            .foregroundColor(.white)
-                            .padding(6)
-                            .padding(.horizontal,6)
-                            .background(.white.opacity(0.25))
-                            .mask(RoundedRectangle(cornerRadius: 20))
-                            .font(.subheadline)
-                    })
-                    
-                    
-                })
-            .toolbar{
-                ToolbarItem(placement: .bottomBar) {
-                    toollbarView
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                LazyVStack(pinnedViews: [.sectionHeaders]) {
+                    Section{
+                        SettingCell(scrollOffset: $scrollOffset,namespace: _namespace)
+                        ItemCell()
+                            .frame(height: 950)
+                    }
                 }
+                .background(
+                    GeometryReader { geo in
+                        Color.clear
+                            .onAppear {
+                                self.scrollOffset = geo.frame(in: .global).minY
+                            }
+                            .onChange(of: geo.frame(in: .global).minY) { newValue in
+                                print(newValue)
+                                withAnimation {
+                                    self.scrollOffset = newValue
+                                }
+                            }
+                    }
+                )
+            }
+            .overlay(alignment:.top) {
+                if scrollOffset > -80{
+                    HStack{
+                        Button(action: {
+                            
+                        }, label: {
+                            Image(systemName: "qrcode")
+                                .imageScale(.medium)
+                                .foregroundColor(.white)
+                                .padding(6)
+                                .background(.white.opacity(0.25))
+                                .mask(Circle())
+                        })
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            
+                        }, label: {
+                            Text("Tahrir")
+                                .foregroundColor(.white)
+                                .padding(6)
+                                .padding(.horizontal,6)
+                                .background(.white.opacity(0.25))
+                                .mask(RoundedRectangle(cornerRadius: 20))
+                                .font(.subheadline)
+                        })
+                    }
+                    .padding(.horizontal,20)
+                }else{
+                    HStack{
+                        Text("A'zamjon Abdumuxtorov")
+                            .font(.headline)
+                            .foregroundColor(.primary)
+                            .matchedGeometryEffect(id: "fullname", in: namespace)
+                    }
+                    .padding(.horizontal)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 40)
+                    .background(Color(.secondarySystemBackground))
+                    .overlay(alignment: .trailing) {
+                        Image(systemName: "magnifyingglass")
+                            .imageScale(.large)
+                            .bold()
+                            .padding(.trailing)
+                    }
+                }
+            }
+        }
+        .toolbar{
+            ToolbarItem(placement: .bottomBar) {
+                toollbarView
             }
         }
     }

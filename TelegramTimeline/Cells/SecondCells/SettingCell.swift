@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SettingCell: View {
+    @Binding var scrollOffset:CGFloat
+    @Namespace var namespace
     var body: some View {
         VStack{
             Image("img1").resizable()
@@ -16,13 +18,19 @@ struct SettingCell: View {
             Text("A'zamjon Abdumuxtorov")
                 .font(.title)
                 .foregroundColor(.white)
+                .matchedGeometryEffect(id: "fullname", in: namespace)
             Text("+998 93 998 99 80  @Azamjon_Abdumu...")
                 .foregroundColor(.white.opacity(0.65))
         }
+        
     }
 }
 
 #Preview {
-    SettingCell()
+    
+    NavigationView {
+        SettingView(selection: .constant(2))
+    }
+    //SettingCell()
        
 }
