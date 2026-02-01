@@ -7,40 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8276223C2CA91E5D00500B40 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276223B2CA91E5D00500B40 /* HomeView.swift */; };
-		8276223E2CA94FC900500B40 /* ChatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276223D2CA94FC900500B40 /* ChatDetailView.swift */; };
+		820730332F24E21B008E0498 /* CustomSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820730322F24E21B008E0498 /* CustomSection.swift */; };
+		820730362F24E2EC008E0498 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820730352F24E2EC008E0498 /* TrackableScrollView.swift */; };
+		820730392F25F717008E0498 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820730382F25F717008E0498 /* LoginView.swift */; };
+		823F7FCE2F2618A700A5E6C9 /* TDLibKit in Frameworks */ = {isa = PBXBuildFile; productRef = 823F7FCD2F2618A700A5E6C9 /* TDLibKit */; };
+		823F7FD02F268F4800A5E6C9 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823F7FCF2F268F4800A5E6C9 /* SwiftUIView.swift */; };
+		8270513A2F12176B00A44077 /* NavCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827051392F12176B00A44077 /* NavCoordinator.swift */; };
+		8270513C2F12177600A44077 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270513B2F12177600A44077 /* Coordinatable.swift */; };
+		8270513E2F12178700A44077 /* CoordinatorStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270513D2F12178700A44077 /* CoordinatorStack.swift */; };
+		827051402F12179100A44077 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270513F2F12179100A44077 /* TabCoordinator.swift */; };
+		827051432F1217B500A44077 /* CoordinatorPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827051422F1217B500A44077 /* CoordinatorPages.swift */; };
+		827051462F121E6C00A44077 /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827051452F121E6C00A44077 /* AppTab.swift */; };
+		8270514B2F12291000A44077 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270514A2F12291000A44077 /* UINavigationController.swift */; };
+		8276223C2CA91E5D00500B40 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276223B2CA91E5D00500B40 /* MainTabBarView.swift */; };
 		8281F86E2B3BE12200DFAFE2 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F86D2B3BE12200DFAFE2 /* ContactView.swift */; };
 		8281F8702B3BE13000DFAFE2 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F86F2B3BE13000DFAFE2 /* SettingView.swift */; };
 		8281F8732B3BE6B400DFAFE2 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F8722B3BE6B400DFAFE2 /* ContactCell.swift */; };
-		8281F8752B3BEE0D00DFAFE2 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F8742B3BEE0D00DFAFE2 /* SettingCell.swift */; };
-		8281F8772B3BF12F00DFAFE2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F8762B3BF12F00DFAFE2 /* ItemCell.swift */; };
+		8281F8752B3BEE0D00DFAFE2 /* ImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F8742B3BEE0D00DFAFE2 /* ImageHeaderView.swift */; };
+		8281F8772B3BF12F00DFAFE2 /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281F8762B3BF12F00DFAFE2 /* SectionRow.swift */; };
+		82B5DB762F2276B9001990F7 /* CustomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B5DB752F2276B9001990F7 /* CustomRow.swift */; };
+		82B5DB782F2276E8001990F7 /* TabContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B5DB772F2276E8001990F7 /* TabContentView.swift */; };
+		82CBF25A2F25FF720077E5DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBF2592F25FF720077E5DE /* ContentView.swift */; };
 		82D5B6F12B3B0BA40013A696 /* TelegramTimelineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B6F02B3B0BA40013A696 /* TelegramTimelineApp.swift */; };
-		82D5B6F32B3B0BA40013A696 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B6F22B3B0BA40013A696 /* ContentView.swift */; };
+		82D5B6F32B3B0BA40013A696 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B6F22B3B0BA40013A696 /* ChatView.swift */; };
 		82D5B6F52B3B0BA50013A696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D5B6F42B3B0BA50013A696 /* Assets.xcassets */; };
 		82D5B6F82B3B0BA50013A696 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D5B6F72B3B0BA50013A696 /* Preview Assets.xcassets */; };
-		82D5B7002B3B116B0013A696 /* StoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B6FF2B3B116B0013A696 /* StoryItem.swift */; };
-		82D5B7022B3B118D0013A696 /* AddStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B7012B3B118D0013A696 /* AddStory.swift */; };
 		82D5B7042B3B14C50013A696 /* SegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B7032B3B14C50013A696 /* SegmentControl.swift */; };
-		82D5B7062B3B1A300013A696 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5B7052B3B1A300013A696 /* Items.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8276223B2CA91E5D00500B40 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		8276223D2CA94FC900500B40 /* ChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
+		820730322F24E21B008E0498 /* CustomSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSection.swift; sourceTree = "<group>"; };
+		820730352F24E2EC008E0498 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
+		820730382F25F717008E0498 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		823F7FCF2F268F4800A5E6C9 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		827051392F12176B00A44077 /* NavCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavCoordinator.swift; sourceTree = "<group>"; };
+		8270513B2F12177600A44077 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		8270513D2F12178700A44077 /* CoordinatorStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorStack.swift; sourceTree = "<group>"; };
+		8270513F2F12179100A44077 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		827051422F1217B500A44077 /* CoordinatorPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorPages.swift; sourceTree = "<group>"; };
+		827051452F121E6C00A44077 /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
+		8270514A2F12291000A44077 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		8276223B2CA91E5D00500B40 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		8281F86D2B3BE12200DFAFE2 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		8281F86F2B3BE13000DFAFE2 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		8281F8722B3BE6B400DFAFE2 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
-		8281F8742B3BEE0D00DFAFE2 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
-		8281F8762B3BF12F00DFAFE2 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		8281F8742B3BEE0D00DFAFE2 /* ImageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHeaderView.swift; sourceTree = "<group>"; };
+		8281F8762B3BF12F00DFAFE2 /* SectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
+		82B5DB752F2276B9001990F7 /* CustomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRow.swift; sourceTree = "<group>"; };
+		82B5DB772F2276E8001990F7 /* TabContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContentView.swift; sourceTree = "<group>"; };
+		82CBF2592F25FF720077E5DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		82D5B6ED2B3B0BA40013A696 /* TelegramTimeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegramTimeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D5B6F02B3B0BA40013A696 /* TelegramTimelineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramTimelineApp.swift; sourceTree = "<group>"; };
-		82D5B6F22B3B0BA40013A696 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82D5B6F22B3B0BA40013A696 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		82D5B6F42B3B0BA50013A696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82D5B6F72B3B0BA50013A696 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		82D5B6FF2B3B116B0013A696 /* StoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryItem.swift; sourceTree = "<group>"; };
-		82D5B7012B3B118D0013A696 /* AddStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStory.swift; sourceTree = "<group>"; };
 		82D5B7032B3B14C50013A696 /* SegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControl.swift; sourceTree = "<group>"; };
-		82D5B7052B3B1A300013A696 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,29 +69,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				823F7FCE2F2618A700A5E6C9 /* TDLibKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8281F86B2B3BDE0500DFAFE2 /* AppUtils */ = {
+		820730342F24E2CD008E0498 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				820730352F24E2EC008E0498 /* TrackableScrollView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		820730372F25F6FF008E0498 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				820730382F25F717008E0498 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		827051382F12170100A44077 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8270513F2F12179100A44077 /* TabCoordinator.swift */,
+				8270513D2F12178700A44077 /* CoordinatorStack.swift */,
+				827051392F12176B00A44077 /* NavCoordinator.swift */,
+				8270513B2F12177600A44077 /* Coordinatable.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		827051412F1217AD00A44077 /* CoordinatorPages */ = {
+			isa = PBXGroup;
+			children = (
+				827051422F1217B500A44077 /* CoordinatorPages.swift */,
+			);
+			path = CoordinatorPages;
+			sourceTree = "<group>";
+		};
+		827051442F121E1700A44077 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8276223B2CA91E5D00500B40 /* MainTabBarView.swift */,
+				827051452F121E6C00A44077 /* AppTab.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		827051472F1228E300A44077 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8270514A2F12291000A44077 /* UINavigationController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8281F86B2B3BDE0500DFAFE2 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				82D5B6F02B3B0BA40013A696 /* TelegramTimelineApp.swift */,
 				82D5B6F42B3B0BA50013A696 /* Assets.xcassets */,
 			);
-			path = AppUtils;
+			path = App;
 			sourceTree = "<group>";
 		};
 		8281F86C2B3BDE2200DFAFE2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				82D5B6F22B3B0BA40013A696 /* ContentView.swift */,
-				8281F86D2B3BE12200DFAFE2 /* ContactView.swift */,
-				8281F86F2B3BE13000DFAFE2 /* SettingView.swift */,
-				8276223B2CA91E5D00500B40 /* HomeView.swift */,
-				8276223D2CA94FC900500B40 /* ChatDetailView.swift */,
+				82CBF2592F25FF720077E5DE /* ContentView.swift */,
+				820730372F25F6FF008E0498 /* Login */,
+				82B5DB722F2263A2001990F7 /* Main */,
+				827051442F121E1700A44077 /* TabBar */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -79,10 +152,22 @@
 			isa = PBXGroup;
 			children = (
 				8281F8722B3BE6B400DFAFE2 /* ContactCell.swift */,
-				8281F8742B3BEE0D00DFAFE2 /* SettingCell.swift */,
-				8281F8762B3BF12F00DFAFE2 /* ItemCell.swift */,
+				8281F8742B3BEE0D00DFAFE2 /* ImageHeaderView.swift */,
+				8281F8762B3BF12F00DFAFE2 /* SectionRow.swift */,
 			);
 			path = SecondCells;
+			sourceTree = "<group>";
+		};
+		82B5DB722F2263A2001990F7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				82D5B6F22B3B0BA40013A696 /* ChatView.swift */,
+				8281F86D2B3BE12200DFAFE2 /* ContactView.swift */,
+				8281F86F2B3BE13000DFAFE2 /* SettingView.swift */,
+				82B5DB772F2276E8001990F7 /* TabContentView.swift */,
+				823F7FCF2F268F4800A5E6C9 /* SwiftUIView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		82D5B6E42B3B0BA40013A696 = {
@@ -104,9 +189,13 @@
 		82D5B6EF2B3B0BA40013A696 /* TelegramTimeline */ = {
 			isa = PBXGroup;
 			children = (
+				827051412F1217AD00A44077 /* CoordinatorPages */,
+				827051382F12170100A44077 /* Coordinator */,
+				820730342F24E2CD008E0498 /* Helper */,
 				8281F86C2B3BDE2200DFAFE2 /* Views */,
-				82D5B6FE2B3B11530013A696 /* Cells */,
-				8281F86B2B3BDE0500DFAFE2 /* AppUtils */,
+				82D5B6FE2B3B11530013A696 /* Component */,
+				827051472F1228E300A44077 /* Extension */,
+				8281F86B2B3BDE0500DFAFE2 /* App */,
 				82D5B6F62B3B0BA50013A696 /* Preview Content */,
 			);
 			path = TelegramTimeline;
@@ -120,16 +209,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		82D5B6FE2B3B11530013A696 /* Cells */ = {
+		82D5B6FE2B3B11530013A696 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				8281F8712B3BE69700DFAFE2 /* SecondCells */,
-				82D5B7012B3B118D0013A696 /* AddStory.swift */,
-				82D5B6FF2B3B116B0013A696 /* StoryItem.swift */,
+				820730322F24E21B008E0498 /* CustomSection.swift */,
+				82B5DB752F2276B9001990F7 /* CustomRow.swift */,
 				82D5B7032B3B14C50013A696 /* SegmentControl.swift */,
-				82D5B7052B3B1A300013A696 /* Items.swift */,
+				8281F8712B3BE69700DFAFE2 /* SecondCells */,
 			);
-			path = Cells;
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +248,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					82D5B6EC2B3B0BA40013A696 = {
 						CreatedOnToolsVersion = 15.1;
@@ -176,6 +264,9 @@
 				Base,
 			);
 			mainGroup = 82D5B6E42B3B0BA40013A696;
+			packageReferences = (
+				823F7FCC2F2618A700A5E6C9 /* XCRemoteSwiftPackageReference "TDLibKit" */,
+			);
 			productRefGroup = 82D5B6EE2B3B0BA40013A696 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,18 +294,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				82D5B7042B3B14C50013A696 /* SegmentControl.swift in Sources */,
+				8270514B2F12291000A44077 /* UINavigationController.swift in Sources */,
+				827051432F1217B500A44077 /* CoordinatorPages.swift in Sources */,
 				8281F86E2B3BE12200DFAFE2 /* ContactView.swift in Sources */,
+				820730362F24E2EC008E0498 /* TrackableScrollView.swift in Sources */,
+				827051462F121E6C00A44077 /* AppTab.swift in Sources */,
+				823F7FD02F268F4800A5E6C9 /* SwiftUIView.swift in Sources */,
+				8270513C2F12177600A44077 /* Coordinatable.swift in Sources */,
 				8281F8732B3BE6B400DFAFE2 /* ContactCell.swift in Sources */,
-				8281F8772B3BF12F00DFAFE2 /* ItemCell.swift in Sources */,
-				82D5B7002B3B116B0013A696 /* StoryItem.swift in Sources */,
-				82D5B6F32B3B0BA40013A696 /* ContentView.swift in Sources */,
-				8276223E2CA94FC900500B40 /* ChatDetailView.swift in Sources */,
+				827051402F12179100A44077 /* TabCoordinator.swift in Sources */,
+				82B5DB762F2276B9001990F7 /* CustomRow.swift in Sources */,
+				8281F8772B3BF12F00DFAFE2 /* SectionRow.swift in Sources */,
+				820730332F24E21B008E0498 /* CustomSection.swift in Sources */,
+				82CBF25A2F25FF720077E5DE /* ContentView.swift in Sources */,
+				82D5B6F32B3B0BA40013A696 /* ChatView.swift in Sources */,
+				82B5DB782F2276E8001990F7 /* TabContentView.swift in Sources */,
 				82D5B6F12B3B0BA40013A696 /* TelegramTimelineApp.swift in Sources */,
+				820730392F25F717008E0498 /* LoginView.swift in Sources */,
 				8281F8702B3BE13000DFAFE2 /* SettingView.swift in Sources */,
-				82D5B7062B3B1A300013A696 /* Items.swift in Sources */,
-				8276223C2CA91E5D00500B40 /* HomeView.swift in Sources */,
-				8281F8752B3BEE0D00DFAFE2 /* SettingCell.swift in Sources */,
-				82D5B7022B3B118D0013A696 /* AddStory.swift in Sources */,
+				8270513E2F12178700A44077 /* CoordinatorStack.swift in Sources */,
+				8270513A2F12176B00A44077 /* NavCoordinator.swift in Sources */,
+				8276223C2CA91E5D00500B40 /* MainTabBarView.swift in Sources */,
+				8281F8752B3BEE0D00DFAFE2 /* ImageHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +357,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = D27FHR29X4;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -279,6 +381,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -319,6 +422,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = D27FHR29X4;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -335,6 +439,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -348,7 +453,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TelegramTimeline/Preview Content\"";
-				DEVELOPMENT_TEAM = D27FHR29X4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -356,7 +460,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +482,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TelegramTimeline/Preview Content\"";
-				DEVELOPMENT_TEAM = D27FHR29X4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -386,7 +489,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,6 +525,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		823F7FCC2F2618A700A5E6C9 /* XCRemoteSwiftPackageReference "TDLibKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swiftgram/TDLibKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		823F7FCD2F2618A700A5E6C9 /* TDLibKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 823F7FCC2F2618A700A5E6C9 /* XCRemoteSwiftPackageReference "TDLibKit" */;
+			productName = TDLibKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82D5B6E52B3B0BA40013A696 /* Project object */;
 }

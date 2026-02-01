@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TelegramTimelineApp: App {
+    @StateObject private var tabCoordinator = TabCoordinator()
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            SwiftUIView()
+                .environmentObject(tabCoordinator)
         }
     }
 }
